@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">para<span>Shop</span></div>
+    <input type="checkbox" id="burger-toggle" class="burger-checkbox">
+    <label for="burger-toggle" class="burger-icon">
+        <span></span>
+    </label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Товары</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="order.html"  class="active">Заказы</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="cart.html">Корзина</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main class="container">
+    <h1>Оформить заказ</h1>
+    <div class="order-form">
+        <form>
+            <div class="form-grid">
+                <div class="form-group full-width">
+                    <label>Ваше полное имя *</label>
+                    <input type="text" placeholder="Иванов Иван Иванович" required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" placeholder="example@mail.ru" required>
+                </div>
+                <div class="form-group">
+                    <label>Телефон *</label>
+                    <input type="tel" placeholder="+7 (800) 555-35-35" required>
+                </div>
+                <div class="form-group">
+                    <label>Выберите товар</label>
+                    <select>
+                        <option>Tissot pr 100 - 54 999 ₽</option>
+                        <option>Tissot classic dream lady - 49 999 ₽</option>
+                        <option>Tissot everytime - 45 000 ₽</option>
+                        <option>Tissot prx - 55 000 ₽</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Количество</label>
+                    <input type="number" value="1" min="1" max="10">
+                </div>
+                <div class="form-group full-width">
+                    <label>Способ доставки</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="delivery" checked> Курьером</label>
+                        <label><input type="radio" name="delivery"> Самовывоз</label>
+                        <label><input type="radio" name="delivery"> Почта России</label>
+                </div>
+                <div class="form-group full-width">
+                    <label><input type="checkbox" required> Я согласен с условиями обработки данных</label>
+                </div>
+                <div class="form-group full-width">
+                    <label>Комментарий к заказу</label>
+                    <textarea rows="3" placeholder="Пожелания, удобное время доставки..."></textarea>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Оформить заказ</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>© paraShop — быстрое оформление</p>
+</footer>
+
+</body>
+</html>
